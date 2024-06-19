@@ -124,7 +124,7 @@ nginx_service=$(systemctl status nginx | grep Active | awk '{print $3}' | cut -d
 clear
 # STATUS SERVICE  SSH 
 if [[ $ssh_service == "running" ]]; then 
-   status_ssh="${GREEN}ON🟢${NC}"
+   status_ssh="${GREEN}ON${NC}"
 else
    status_ssh="${RED}OFF🔴${NC}"
 fi
